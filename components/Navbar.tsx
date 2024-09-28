@@ -4,6 +4,7 @@ import React from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { Button } from './ui/button'
+import { cn } from '@/lib/utils'
 
 const navItems = [
   {
@@ -36,8 +37,21 @@ const Navbar = () => {
           <h1 className='font-black text-3xl text-orange-gradient text-shadow-orange'>PTD KSEP</h1>
         </Link>
 
-        <Button variant={"outline"}>
+        <div className='flex gap-x-12'>
+          {navItems.map((item, index) => {
+            return (
+              <Link key={index} href={item.path} className={cn(
+                'text-[#B6B6B6] font-bold',
+                pathname === item.path && "text-orange-gradient"
+              )}>
+                {item.name}
+              </Link>
+            )
+          })}
+        </div>
 
+        <Button variant={"outline"} className='rounded-full border-2 border-[#ED3633] text-[#ED3633]'>
+          Daftar
         </Button>
       </nav>
 
