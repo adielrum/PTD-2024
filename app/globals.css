@@ -68,6 +68,20 @@ body {
   }
 }
 
+@font-face {
+  font-family: 'Futura';
+  src: url('./fonts/FUTURA-MEDIUM-BT.TTF');
+  font-weight: 500; /* You can adjust this weight if necessary */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url('./fonts/FUTURAMDBT_BOLD.OTF');
+  font-weight: 700; /* Bold font weight */
+  font-style: normal;
+}
+
 @layer base {
   * {
     @apply border-border;
