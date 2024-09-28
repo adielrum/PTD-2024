@@ -59,6 +59,9 @@ const config: Config = {
 			fontFamily: {
         futura: ['Futura', 'sans-serif'],
       },
+			textShadow: {
+        'orange': '2px 2px 4px #F6DEAD',
+      },
   	}
   },
   plugins: [require("tailwindcss-animate")],
