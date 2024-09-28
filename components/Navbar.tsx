@@ -49,10 +49,12 @@ const Navbar = () => {
             )
           })}
         </div>
-
-        <Button variant={"outline"} className='rounded-full border-2 border-[#ED3633] text-[#ED3633]'>
-          Daftar
-        </Button>
+        
+        <Link href={"/auth/daftar"}>
+          <Button variant={"outline"} className='rounded-full border-2 border-[#ED3633] text-[#ED3633]'>
+            Daftar
+          </Button>
+        </Link>
       </nav>
 
       {/* Mobile Nav */}
