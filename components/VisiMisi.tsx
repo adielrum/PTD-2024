@@ -1,5 +1,5 @@
 import Image from "next/image"
-import WhatIs from "@/public/What is Pendidikan Tingkat Dasar KSEP_.svg"
+import WhatIs from "@/public/What is Pendidikan Tingkat Dasar KSEP_.png"
 import Logo from "@/public/LOGO.svg"
 import Star from "@/public/Star 2.svg"
 import Visi from "@/public/Visi.svg"
@@ -21,14 +21,14 @@ const VisiMisi = () => {
                 alt="Dadu"
                 className="absolute right-0 z-0 bottom-0"
             />
-            <div className='flex gap-5 justify-center items-center p-20 relative'>
-                <div className="w-[35%] z-10">
+            <div className='grid md:grid-cols-2 gap-5 pt-20 relative'>
+                <div className="z-10 flex justify-center md:justify-end">
                     <Image 
                         src={Logo}
                         alt="Logo"
                     />
                 </div>
-                <div className="flex flex-col w-[65%] pr-32">
+                <div className="flex flex-col px-10 md:pr-16">
                     <Image 
                         src={WhatIs}
                         alt="Title"
@@ -37,14 +37,14 @@ const VisiMisi = () => {
                     <Image 
                         src={Star}
                         alt="Star"
-                        className="absolute z-0 left-[30%] top-0"
+                        className="absolute z-0 md:left-[45%] md:top-0 top-[50%] left-0"
                     />
                     <p className="text-[#3E205A] p-5 bg-white/60 rounded-lg mt-5"> Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.</p>
                 </div>
             </div>
 
-            <div className="flex pb-32">
-                <div className="w-1/2 pt-20 pl-32 pr-5">
+            <div className="grid md:grid-cols-2 pb-32 gap-10 px-10 pt-20">
+                <div>
                     <div className="relative">
                         <p className="text-white font-[500] bg-gradient-to-b from-[#3E205A] to-[#E84756] p-5 pt-8 border-solid border-white border-[6px] rounded-3xl overflow-hidden shadow-2xl">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.</p>
                         <Image 
@@ -54,7 +54,7 @@ const VisiMisi = () => {
                         />
                     </div>
                 </div>
-                <div className="w-1/2 pt-20 pr-32 pl-5">
+                <div>
                     <div className="relative">
                         <p className="text-white font-[500] bg-gradient-to-b from-[#3E205A] to-[#E84756] p-5 pt-8 border-solid border-white border-[6px] rounded-3xl overflow-hidden shadow-2xl">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.</p>
                         <Image 
