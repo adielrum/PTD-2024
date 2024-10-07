@@ -21,23 +21,23 @@ const Data = [
 
 const page = () => {
   return (
-    <div className='w-full h-full'>
-      <div className='relative flex bg-gradient-to-r from-[#A958A7] to-[#3E205A] items-center justify-center h-[275px]'>
+    <div className='w-full h-full overflow-clip'>
+      <div className='relative flex bg-gradient-to-r from-[#A958A7] to-[#3E205A] items-center justify-center h-[200px] md:h-[275px]'>
         <Image 
         src={Dice}
         width={368}
         alt='dice'
-        className='absolute -left-[130px] top-[60px]'
+        className='absolute -left-[250px] md:-left-[130px] top-[0px] md:top-[60px] w-100 z-10 '
         />
-        <h1 className='relative font-sans font-extrabold text-8xl text-transparent bg-clip-text bg-gradient-to-r from-[#ED3633] to-[#EF7219] border-white white-stroke-text text-center'>ANNOUNCEMENT</h1>
+        <h1 className='relative font-sans font-extrabold text-3xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-[#ED3633] to-[#EF7219] border-white white-stroke-text text-center'>ANNOUNCEMENT</h1>
         <Image
         src={Sparkle}
         width = {350}
         alt = 'sparkle'
-        className='absolute -right-[100px] -top-[100px] -z-0'
+        className='absolute -top-[170px] -right-[140px] md:-right-[100px] md:-top-[100px]'
         />
       </div>
-      <div className='bg-[#4E2865] px-20 py-20'>
+      <div className='bg-[#4E2865] px-20 py-20 z-20'>
         {Data.map((item) => {
           return (
             <AnnouncementCard
